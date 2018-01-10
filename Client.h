@@ -9,7 +9,7 @@
 
 class Client{
 	
-	int TCP_PORT_NUM = 7013;
+	int TCP_PORT_NUM = 7033;
 	int UDP_PORT_NUM = 9373;
 
 	int tcp_descriptor, udp_descriptor;
