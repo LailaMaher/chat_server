@@ -19,12 +19,17 @@ int main(int argc, char const *argv[])
 	int cnt = 0;
 
 
+
+	cout << "Creating Server"<<endl;
+
+
 	Server* tcp = Server::instance();
 	tcp->createSocket();
-	tcp->acceptUser();
 
 
 	while(true){
+
+		cout << " Accepting user\n";
 
 		User* new_user = tcp->acceptUser();
 
