@@ -48,6 +48,8 @@ User* Server::acceptUser(){
 		perror("ACCEPT ERROR");
 
 	string IP(inet_ntoa(user_address.sin_addr));
+	
+	cout << "IP address = " << IP << endl;
 
 	return createUser(user_fd, IP);
 	
