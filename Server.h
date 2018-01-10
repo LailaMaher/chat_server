@@ -8,7 +8,7 @@
 
 class Server{
 	
-	int PORT_NUM = 7013;
+	int PORT_NUM = 7033;
 	
 	User* users[100];
 	pthread_mutex_t users_mutex;
